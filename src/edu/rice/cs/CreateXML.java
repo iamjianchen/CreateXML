@@ -63,8 +63,8 @@ public class CreateXML {
 			// output
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();
-			StringWriter writer = new StringWriter();
-			transformer.transform(new DOMSource(document), new StreamResult(writer));
+//			StringWriter writer = new StringWriter();
+//			transformer.transform(new DOMSource(document), new StreamResult(writer));
 //			System.out.println(writer.toString());
 			
 			transformer.transform(new DOMSource(document), new StreamResult(new File("newxml.xml")));
